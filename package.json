@@ -1,0 +1,35 @@
+{
+  "name": "aeronautics",
+  "version": "1.0.0",
+  "scripts": {
+    "acceptance": "yarn def && codeceptjs run --steps",
+    "acceptance:parallel": "yarn def && codeceptjs run-workers --suites 10",
+    "acceptance:report": "allure serve ./tests/acceptance/report",
+    "def": "codeceptjs def",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "codeceptjs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/selenium-standalone-service": "^7.14.1",
+    "allure-commandline": "^2.13.8",
+    "codeceptjs": "^3.1.3",
+    "codeceptjs-configure": "^9.0.19",
+    "codeceptjs-saucelabs": "^5.2.22",
+    "codeceptjs-selenoid": "^1.0.3",
+    "debug": "^4.3.2",
+    "deepmerge": "^4.2.2",
+    "dotenv-extended": "^2.9.0",
+    "expect": "^27.2.5",
+    "playwright": "^1.15.2",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.4",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4",
+    "webdriverio": "^7.14.1"
+  }
+}
